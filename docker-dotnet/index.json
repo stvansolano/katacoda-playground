@@ -1,16 +1,16 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario!!",
+  "title": "Docker .NET (Core)",
+  "description": "Docker + .NET Playground",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "1 hour",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Docker 101",
       "text": "step1.md"
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "Esteban Solano G. @stvansolano"
     },
     "finish": {
       "text": "finish.md"
