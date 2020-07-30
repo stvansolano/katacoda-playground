@@ -17,6 +17,10 @@ This is an _example_ of running a **command**
 - Move to parent folder
 `cd ..`{{execute}}
 
+- Show OS details (distribution)
+
+`cat /etc/*release`{{execute}}
+
 ## Getting Started
 
 ### 1. Clone the Playground: 

@@ -4,7 +4,7 @@ Docker 101 + .NET (Core)
 
 - Pull an image (Docker Hub Registry)
 
-`docker pull nginx:alpine`{{execute}}
+`docker pull nginx:latest`{{execute}}
 
 - Run a container **host:container**
 `docker run -d --rm  -p 7000:80 --name=web_server nginx`{{execute}}
@@ -26,5 +26,15 @@ https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/prod
 ### Play With Docker
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
 
-### Others
-- SQL SErver on Linux (unaccessible externally, port 1433)
+### Other commands & resources
+- SQL Server on Linux (unaccessible externally, port 1433)
+
+- VS Code server
+`docker run -d -it -p 3000:8080 -v "$PWD:/home/coder/project" -u "$(id -u):$(id -g)" codercom/code-server:latest`{{execute}}
+- https://github.com/cdr/code-server
+
+- Attach shell/bash to existing container
+`docker exec -it <CONTAINER> /bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"`{{execute}}
+
+### Docker documentation
+- https://docs.docker.com/compose/reference/up/
