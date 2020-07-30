@@ -4,23 +4,36 @@
   "difficulty": "beginner",
   "time": "1 hour",
   "details": {
-    "steps": [{
-      "title": "Step 1 - Docker 101",
+    "steps": [
+      {
+      "title": "Step 1 - Linux Command",
       "text": "step1.md"
-    }],
+      },
+      {
+        "title": "Step 2 - Docker commands",
+        "text": "step2.md"
+        }
+    ],
     "intro": {
       "text": "intro.md",
       "credits": "Esteban Solano G. @stvansolano"
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "docker-compose.yml", "target": "~/tutorial", "chmod": "+x"}
+      ]
     }
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nDocker installed\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "docker"
+    ,
+    "others": ["bash", "dotnet:3.1"]
   }
 }
